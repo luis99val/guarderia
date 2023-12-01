@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Para agregar un salon</title>
+</head>
+<style type="text/css">
+.datos{
+    background-image:url("madera.png");
+    height: 950px;
+}
+.logo{
+    left: 200px;
+        top: 90px;
+        width: 200px;
+        height: 200px;
+}
+.operacion{
+    color: white;
+}
+#v{
+                
+    border-radius: 100px;
+    height: 40px;
+    
+}
+#v{
+    height: 40px;
+    position: relative;
+                top: 50px;
+                width: 200px;
+                left: 30px;
+                background-color:cadetblue;
+                text-align: center;
+                padding: 10px;
+                box-shadow: rgb(255, 181, 21) 5px 5px 10px;
+                border-radius: 15px;
+                text-decoration: white;
+                color: white;
+}
+#v:hover{
+background-color: rgb(255, 181, 21);
+       }
+       .salon{
+color: white;
+text-shadow: rgb(0,0,0) 10px 10px 20px;
+       }
+</style>
+<body>
+<center>
+    <main class="datos">
+    <img src="guarderia.jpg" alt="insertar" class="logo" />
+    <h1 class="salon">PAGINA PARA AGREGAR UN SALON</h1>
+<form action="insertarsalon.php" method="post" class="operacion">
+
+    <label for="numero_salon">Numero de salon:</label>
+    <input type="text" name="numero_salon" >
+    
+    <label for="capacidad">Capacidad del salon:</label>
+    <input type="text" name="capacidad" >
+
+    <label for="edad_minima">Edad minima:</label>
+    <input type="text" name="edad_minima" >
+    
+    <label for="edad_maxima">Edad maxima:</label>
+    <input type="text" name="edad_maxima" ><br>
+
+    <label for="id_niño">Id del peque</label>
+    <input type="number" name="id_niño" >
+
+    <br></br>
+
+    <input type="submit" value="Insertar" id="v">
+    <a href="operaciones_salones.html"  id="v">regresar</a>
+  
+    
+
+  
+</form>
+</main>
+</body>
+
+</center>
+
+</html>

@@ -1,0 +1,108 @@
+<style>
+.datos{
+        background-image:url("madera.png");
+        width: 1900px;
+        height: 900px;
+        
+        
+    }
+    .logo{
+        width: 200px;
+        height: 200px;
+    }
+    .nom1{
+        color:white;
+    }
+    .ent:hover{
+color: aqua;
+    }
+    #v{
+                
+                color: white;
+            }
+            #v:hover{
+                background-color: rgb(255, 181, 21);
+            }
+            .opciones{
+    /*position: relative;*/
+                top: 50px;
+                width: 200px;
+                left: 30px;
+                background-color:cadetblue;
+                text-align: center;
+                padding: 10px;
+                box-shadow: rgb(21, 150, 255) 5px 5px 10px;
+                border-radius: 15px;
+}
+.boton{
+    top: 300px;
+    box-shadow: rgb(21, 150, 255) 5px 5px 10px;
+}
+.actu{
+    color: white;
+    text-shadow: rgb(21, 150, 255) 10px 10px 20px;
+}
+.eliminar{
+        top: 400px;
+                width: 200px;
+                left: 150px;
+                background-color:cadetblue;
+                text-align: center;
+                padding: 10px;
+                box-shadow: rgb(21, 150, 255) 5px 5px 10px;
+                border-radius: 15px;
+                color: white;
+            }
+            .eliminar:hover{
+                background-color: rgb(255, 181, 21);
+            }
+        .cerrar{
+            top: 1000px;
+    background-color:cadetblue;
+    left: 1075px;
+    color:white;
+    border-radius: 15px;
+    padding: 10px;
+        }
+        .cerrar:hover{
+    
+    background-color:red;
+}
+    </style>
+    <center>
+<form action="actualizar.php" method="post" class="datos">
+
+<img src="actual.png" alt="insertar" class="logo" /><br>
+<h1 class="actu">ACTUALIZACION DE PADRES</h1>
+<label class="nom1">id_padre </label>
+<input type="number" name="id">
+
+<label class="nom1">nombre1 </label>
+<input type="text" name="nombre1" class="ent" >
+
+<label class="nom1">nombre2 </label>
+<input type="text" name="nombre2"  class="ent"><br>
+
+<label class="nom1">apellido_paterno </label>
+<input type="text" name="appat"  class="ent">
+
+<label class="nom1">apellido_materno </label>
+<input type="text" name="apmat" class="ent">
+
+<label class="nom1">correo </label>
+<input type="text" name="correo"  class="ent"><br>
+
+<label class="nom1">telefono </label>
+<input type="text" name="tel"  class="ent"><br><br><br><br>
+   
+
+    
+    <input type="submit" value="Actualizar" class="boton">
+
+   
+    <a href="insertar_datos.html" class="eliminar">registrar padre</a>
+<a href="buscar_registro.html" class="eliminar">buscar padre</a>
+     <a href="operaciones_padres.html" class="opciones" id="v">regresar</a>
+<a href="logout.php" class="cerrar">Cerrar sesion</a>
+</form>
+</center>

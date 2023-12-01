@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODIFICAR</title>
+
+</head>
+<style type="text/css">
+    .main{
+        background-image: url("madera.png");
+        width: 1950px;
+            height: 900px;
+         color: white;
+    }
+    .eliminar{
+        top: 600px;
+                width: 200px;
+                left: 150px;
+                background-color:cadetblue;
+                text-align: center;
+                padding: 10px;
+                box-shadow: rgb(21, 150, 255) 5px 5px 10px;
+                border-radius: 15px;
+                color: white;
+                text-decoration: none;
+            }
+            .eliminar:hover{
+                background-color: rgb(255, 181, 21);
+            }
+        .cerrar{
+            top: 1000px;
+    background-color:cadetblue;
+    left: 1075px;
+    color:white;
+    border-radius: 15px;
+    padding: 10px;
+    text-decoration: none;
+        }
+        .cerrar:hover{
+    
+    background-color:red;
+}
+.nuevo{
+        color: white;
+        text-shadow: rgb(0, 0, 0) 20px 20px 20px;
+    }
+    </style>
+<body>
+    <center>
+    <main class="main">
+    <form action="modificarU.php" method="post">
+        <img src="update.jpg" alt="insertar" class="logo" />
+        <h1 class="nuevo">MODIFICAR USUARIO</h1>
+<label for="id">Clave</label>
+<input id="id" type="number" name="id"/><br/>
+
+<label for="nombre">Campo nuevo</label>
+<input id="nombre "type="text" name="nuevo"/><br>
+
+<input type="submit" value="actualizar"/><br><br><br>
+
+<a href="crearU.html" class="eliminar">registrar usuario</a>
+<a href="buscarU.html" class="eliminar">buscar usuario</a>
+<a href="eliminarU.html" class="eliminar">eliminar usuario</a>
+<a href="logout.php" class="cerrar">Cerrar sesion</a>
+
+
+
+    </main>
+</center>
+</body>
+
+</html>

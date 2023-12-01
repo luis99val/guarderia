@@ -1,0 +1,91 @@
+<style>
+    .datos{
+            background-image:url("madera.png");
+            width: 1900px;
+            height: 1250px;
+            
+            
+        }
+        .logo{
+            width: 200px;
+            height: 200px;
+        }
+        .nom1{
+            color:white;
+        }
+        .ent:hover{
+    color: aqua;
+        }
+        #v{
+                    
+                    color: white;
+                }
+                #v:hover{
+                    background-color: rgb(255, 181, 21);
+                }
+                .opciones{
+        position: relative;
+                    top: 50px;
+                    width: 200px;
+                    left: 30px;
+                    background-color:cadetblue;
+                    text-align: center;
+                    padding: 10px;
+                    
+                    border-radius: 15px;
+    }
+    .actu{
+    color: white;
+    text-shadow: rgb(21, 150, 255) 10px 10px 20px;
+}
+.boton{
+    top: 300px;
+    
+    position: relative;
+                    top: 50px;
+                    width: 100px;
+                    left: 30px;
+                    background-color:cadetblue;
+                    text-align: center;
+                    padding: 10px;
+                    color: white;
+                    border-radius: 15px;
+}
+        </style>
+        
+        <center>
+    <form action="actualizarsalon.php" method="post" class="datos">
+    <img src="actual.png" alt="insertar" class="logo" /><br>
+    <h1 class="actu">ACTUALIZACION DE SALONES</h1>
+
+
+    <label class="nom1">id_salon</label>
+    <input type="number" name="id">
+    
+    <label class="nom1">numero_salon</label>
+    <input type="text" name="numero_salon" class="ent" >
+    
+    <label class="nom1">capacidad</label>
+    <input type="text" name="capacidad"  class="ent">
+    <BR><BR>
+    <label class="nom1">edad_minima</label>
+    <input type="text" name="edad_minima"  class="ent">
+    
+    <label class="nom1">edad_maxima</label>
+    <input type="text" name="edad_maxima" class="ent">
+    
+    <label class="nom1">id_peque</label>
+    <input type="text" name="id_niño"  class="ent"><br><br>
+
+    
+   <!-- <label class="nom1">Numero del tutor</label>
+    <input type="number" name="nomtutor"  class="ent"><br>
+   -->
+    
+      
+    
+        
+        <input type="submit" value="Actualizar" class="boton">
+        <a href="operaciones_padres.html" class="opciones" id="v">regresar</a>
+    </form>
+    </center>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELIMINAR</title>
+
+</head>
+<style type="text/css">
+    .datos{
+    background-image:url("madera.png");
+    height: 950px;
+}
+.titulo{
+    color: white;
+    text-shadow: rgb(0, 0, 0)5px 5px 1px;
+    top: 1000px;
+}
+.logo{
+    left: 200px;
+        top: 90px;
+        width: 200px;
+        height: 200px;
+}
+.identificar{
+    color: white;
+}
+.opciones{
+    position: relative;
+                top: 50px;
+                width: 200px;
+                left: 30px;
+                background-color:cadetblue;
+                text-align: center;
+                padding: 10px;
+                
+                border-radius: 15px;
+}
+#v{
+    height: 40px;
+    position: relative;
+                top: 50px;
+                width: 200px;
+                left: 30px;
+                background-color:cadetblue;
+                text-align: center;
+                padding: 10px;
+                box-shadow: rgb(255, 181, 21) 5px 5px 10px;
+                border-radius: 15px;
+                text-decoration: white;
+                color: white;
+}
+#v:hover{
+background-color: rgb(255, 181, 21);
+       }
+       .opciones{
+    position: relative;
+                top: 50px;
+                width: 200px;
+                left: 30px;
+                background-color:cadetblue;
+                text-align: center;
+                padding: 10px;
+                box-shadow: rgb(255, 181, 21) 5px 5px 10px;
+                border-radius: 15px;
+}
+    </style>
+<body><center>
+<main class="datos">
+    <img src="eliminar.png" alt="insertar" class="logo" />
+    
+<h1 class="titulo">BORRAR</h1>
+
+<form action="M_eliminar.php" method="post" >
+    <label for="id" class="identificar">ID del Registro a Eliminar:</label>
+    
+<input id="id" type="text" name="id_maestros" placeholder="id a eliminar" required/><br/>
+<input type="submit" value="borrar" class="opciones" id="v"/>
+
+<a href="operaciones_Maestros.html" class="opciones" id="v">Regresar</a>
+
+</form>
+</main>
+</body>
+</center>
+</html>

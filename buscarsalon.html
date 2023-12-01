@@ -1,0 +1,75 @@
+<style>
+    .main{
+     background-image:url("madera.png");
+     top: 0px;
+     height: 950px;
+     
+    }
+    .logo{
+    
+    left: 200px;
+        top: 90px;
+        width: 300px;
+        height: 300px;
+    }
+    .opciones{
+      
+                    top: 50px;
+                    width: 200px;
+                    left: 30px;
+                    background-color:cadetblue;
+                    text-align: center;
+                    padding: 10px;
+                    
+                    border-radius: 15px;
+    }
+    #v{
+        height: 40px;
+   
+                    top: 50px;
+                    width: 200px;
+                    left: 30px;
+                    background-color:cadetblue;
+                    text-align: center;
+                    padding: 10px;
+                    box-shadow: rgb(255, 181, 21) 5px 5px 10px;
+                    border-radius: 15px;
+                    text-decoration: white;
+                    color: white;
+    }
+    #v:hover{
+    background-color: rgb(255, 181, 21);
+           }
+           .opciones{
+        position: relative;
+                    top: 50px;
+                    width: 200px;
+                    left: 30px;
+                    background-color:cadetblue;
+                    text-align: center;
+                    padding: 10px;
+                    box-shadow: rgb(255, 181, 21) 5px 5px 10px;
+                    border-radius: 15px;
+    }
+    .p{
+        color: white;
+    }
+    .s{
+     color: white;
+     text-shadow: rgb(0,0,0) 10px 10px 20px;
+    }
+        </style>
+        <center>
+            <main class="main">
+    <form action="buscarsalon.php" method="post">
+        <img src="busqueda.jpg" alt="padres" class="logo" /><br><br>
+        <h1 class="s">BUSQUEDA DE SALON<h1>
+        <label >ID del salon a buscar</label>
+        <input type="text" name="id_salon">
+        <br><br>
+        <input type="submit" value="Buscar" id="v">
+        <a href="operaciones_padres.html"  id="v">regresar</a>
+    </form>
+    </main>
+    </center>
+    

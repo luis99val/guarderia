@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pagina de los pques</title>
+</head>
+<style type="text/css">
+.datos{
+    background-image:url("madera.png");
+    height: 950px;
+}
+.logo{
+    left: 200px;
+        top: 90px;
+        width: 200px;
+        height: 200px;
+}
+.operacion{
+    color: white;
+}
+#v{
+                
+    border-radius: 100px;
+    height: 40px;
+    
+}
+#v:hover{
+background-color: rgb(255, 181, 21);
+       }
+</style>
+<body>
+<center>
+    <main class="datos">
+    <img src="registro.png" alt="insertar" class="logo" />
+    <h1>REGISTRAR A UN NUEVO PEQUE</h1>
+<form action="insertarpeque.php" method="post" class="operacion">
+
+    <label for="nombre1">Nombre 1:</label>
+    <input type="text" name="nombre1" >
+    
+    <label for="nombre2">Nombre 2:</label>
+    <input type="text" name="nombre2" >
+
+    <label for="apellido_paterno">apellido_paterno</label>
+    <input type="text" name="apellido_paterno" >
+    
+    <label for="apellido_materno">apellido_materno</label>
+    <input type="text" name="apellido_materno" >
+
+    <label for="edad">Edad</label>
+    <input type="number" name="edad" >
+    
+    <label for="id_padres">Nombre del tutor</label>
+    <input type="number" name="id_padres" >
+    <br></br>
+
+    <input type="submit" value="Insertar" id="v">
+  
+</form>
+</main>
+</body>
+
+</center>
+
+</html>

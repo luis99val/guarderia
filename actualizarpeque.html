@@ -1,0 +1,70 @@
+<style>
+    .datos{
+            background-image:url("madera.png");
+            width: 1900px;
+            height: 1250px;
+            
+            
+        }
+        .logo{
+            width: 200px;
+            height: 200px;
+        }
+        .nom1{
+            color:white;
+        }
+        #v{
+                    
+                    color: white;
+                }
+                #v:hover{
+                    background-color: rgb(255, 181, 21);
+                }
+                .opciones{
+        
+                    top: 50px;
+                    width: 100px;
+                    left: 30px;
+                    background-color:cadetblue;
+                    text-align: center;
+                    padding: 10px;
+                    
+                    border-radius: 15px;
+    }
+    .act{
+        color: white;
+        text-shadow: rgb(0,0,0) 10px 10px 20px;
+    }
+        </style>
+        <center>
+            <main class="datos">
+    <form action="actualizarpeque.php" method="post" class="datos">
+    <img src="actual.png" alt="insertar" class="logo" /><br>
+    <h1 class="act">ACTUALIZAR UN NINIO<h1>
+
+    <label class="nom1">id_ninio </label>
+    <input type="number" name="id">
+    
+    <label class="nom1">nombre1 </label>
+    <input type="text" name="nombre1" class="nom1" >
+    
+    <label class="nom1">nombre2 </label>
+    <input type="text" name="nombre2"  class="nom1"><br>
+    
+    <label class="nom1">apellido_paterno </label>
+    <input type="text" name="appat"  class="nom1">
+    
+    <label class="nom1">apellido_materno </label>
+    <input type="text" name="apmat" class="nom1">
+    
+    <label class="nom1">edad</label>
+    <input type="text" name="edad"  class="nom1"><br>
+    
+    <label class="nom1">id_padre</label>
+    <input type="text" name="nomtutor"  class="nom1"><br><br>
+       
+        <input type="submit" value="Actualizar" class="opciones" id="v">
+        <a href="operaciones_padres.html" class="opciones" id="v">regresar</a>
+    </form>
+    </main>
+    </center>

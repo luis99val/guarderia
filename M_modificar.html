@@ -1,0 +1,107 @@
+<style>
+    .datos{
+            background-image:url("madera.png");
+            width: 1900px;
+            height: 900px;
+            
+            
+        }
+        .logo{
+            width: 200px;
+            height: 200px;
+        }
+        .nom1{
+            color:white;
+        }
+        .ent:hover{
+    color: aqua;
+        }
+        #v{
+                    
+                    color: white;
+                }
+                #v:hover{
+                    background-color: rgb(255, 181, 21);
+                }
+                .opciones{
+        /*position: relative;*/
+                    top: 50px;
+                    width: 200px;
+                    left: 30px;
+                    background-color:cadetblue;
+                    text-align: center;
+                    padding: 10px;
+                    box-shadow: rgb(21, 150, 255) 5px 5px 10px;
+                    border-radius: 15px;
+                    text-decoration: none;
+    }
+    .boton{
+        top: 300px;
+        box-shadow: rgb(21, 150, 255) 5px 5px 10px;
+    }
+    .actu{
+        color: white;
+        text-shadow: rgb(21, 150, 255) 10px 10px 20px;
+    }
+    .eliminar{
+            top: 400px;
+                    width: 200px;
+                    left: 150px;
+                    background-color:cadetblue;
+                    text-align: center;
+                    padding: 10px;
+                    box-shadow: rgb(21, 150, 255) 5px 5px 10px;
+                    border-radius: 15px;
+                    color: white;
+                }
+                .eliminar:hover{
+                    background-color: rgb(255, 181, 21);
+                }
+            .cerrar{
+                top: 1000px;
+        background-color:cadetblue;
+        left: 1075px;
+        color:white;
+        border-radius: 15px;
+        padding: 10px;
+            }
+            .cerrar:hover{
+        
+        background-color:red;
+    }
+        </style>
+        <center>
+<form action="M_modificar.php" method="post" class="datos">
+
+    <img src="actual.png" alt="insertar" class="logo" /><br>
+    <h1 class="actu">ACTUALIZACION DE MAESTRO</h1>
+<label class="nom1">id_maestro </label>
+    <input type="text" name="id">
+
+    <label class="nom1">nombre1: </label>
+    <input type="text" name="nombre1" >
+
+    <label class="nom1">nombre2: </label>
+    <input type="text" name="nombre2" ><br><br>
+
+    <label class="nom1">apellido_paterno </label>
+     <input type="text" name="appat" >
+
+    <label class="nom1">apellido_materno </label>
+    <input type="text" name="apmat" >
+
+    <label class="nom1">correo </label>
+     <input type="text" name="correo" ><br><br>
+
+    <label class="nom1">telefono </label>
+    <input type="text" name="tel" >
+
+   <label class="nom1">salon </label>
+ <input type="text" name="salon" ><br><br><br>
+
+    
+    <input type="submit" value="Actualizar">
+
+    <a href="operaciones_Maestros.html" class="opciones" id="v">Regresar </a>
+</form>
+</center>

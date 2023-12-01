@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iniciar sesión</title>
+</head>
+<style type="text/css">
+
+.logo{
+    position: relative;
+                top: 120px;
+                width: 200px;
+                left: 605px;
+                text-align: center;
+                padding: 10px;
+                border-radius: 15px;
+}
+.inicio{
+    position: relative;
+                top: 150px;
+                width: 200px;
+                left: 66px;
+                background-color:cadetblue;
+                text-align: center;
+                padding: 10px;
+                
+                border-radius: 15px;
+}
+.main{
+ background-image:url("mosaico.jpg");
+ top: 0px;
+ height: 950px;
+ 
+}
+</style>
+<body>
+    <main class="main">
+        <header class="cabeza">
+            <img src="candado.png" alt="Las Alitas" class="logo" />
+        </header>
+   
+
+    <center>
+    <h2 class="inicio">Inicio de sesion</h2>
+    <form action="login.php" method="post" class="inicio">
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" name="usuario" placeholder="usuario1234" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="hola1234" required><br>
+        <input type="submit" value="ingresar">
+    </form>
+</center>
+    </main>
+</body>
+</html>

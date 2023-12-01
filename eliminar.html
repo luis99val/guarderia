@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Registro</title>
+</head>
+<style>
+    .datos{
+    background-image:url("madera.png");
+    height: 950px;
+}
+.titulo{
+    color: white;
+    text-shadow: rgb(0, 0, 0)5px 5px 1px;
+    top: 1000px;
+}
+.logo{
+    left: 200px;
+        top: 90px;
+        width: 200px;
+        height: 200px;
+}
+.identificar{
+    color: white;
+}
+.opciones{
+    position: relative;
+                top: 50px;
+                width: 200px;
+                left: 30px;
+                background-color:cadetblue;
+                text-align: center;
+                padding: 10px;
+                
+                border-radius: 15px;
+}
+#v{
+    height: 40px;
+    position: relative;
+                top: 50px;
+                width: 200px;
+                left: 30px;
+                background-color:cadetblue;
+                text-align: center;
+                padding: 10px;
+                box-shadow: rgb(255, 181, 21) 5px 5px 10px;
+                border-radius: 15px;
+                text-decoration: white;
+                color: white;
+}
+#v:hover{
+background-color: rgb(255, 181, 21);
+       }
+       .opciones{
+    position: relative;
+                top: 50px;
+                width: 200px;
+                left: 30px;
+                background-color:cadetblue;
+                text-align: center;
+                padding: 10px;
+                box-shadow: rgb(255, 181, 21) 5px 5px 10px;
+                border-radius: 15px;
+}
+</style>
+<body>
+    <center>
+    <main class="datos">
+        <img src="eliminar.png" alt="insertar" class="logo" />
+    <h2 class="titulo">Eliminar Registro</h2><br><br>
+    <form action="eliminar.php" method="post">
+        <label for="id" class="identificar">ID del Registro a Eliminar:</label>
+        <input type="text" name="id" required><br><br>
+        <input type="submit" value="Eliminar" id="v">
+    <a href="buscar_registro.html" class="opciones" id="v">buscar padre</a>
+    <a href="actaulizar.html" class="opciones" id="v">actualizar padre</a>
+    <a href="insertar_datos.html" class="opciones" id="v">ingresar padre</a>
+        <a href="operaciones_padres.html" class="opciones" id="v">regresar</a>
+    </form>
+</main>
+</center>
+</body>
+</html>

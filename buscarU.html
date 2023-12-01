@@ -1,0 +1,61 @@
+<style>
+.datos{
+        background-image:url("madera.png");
+        height: 950px;
+        color: white;
+    }
+    .logo{
+        left: 200px;
+            top: 90px;
+            width: 300px;
+            height: 300px;
+    }
+    .nuevo{
+        color: white;
+        text-shadow: rgb(0, 0, 0) 20px 20px 20px;
+    }
+    .eliminar{
+        top: 400px;
+                width: 200px;
+                left: 150px;
+                background-color:cadetblue;
+                text-align: center;
+                padding: 10px;
+                box-shadow: rgb(21, 150, 255) 5px 5px 10px;
+                border-radius: 15px;
+                color: white;
+            }
+            .eliminar:hover{
+                background-color: rgb(255, 181, 21);
+            }
+        .cerrar{
+            top: 1000px;
+    background-color:cadetblue;
+    left: 1075px;
+    color:white;
+    border-radius: 15px;
+    padding: 10px;
+        }
+        .cerrar:hover{
+    
+    background-color:red;
+}
+</style>
+<main class="datos">
+<center>
+    <img src="buscas.png" alt="insertar" class="logo" />
+<h1 class="nuevo">BUSCAR USUARIO</h1>
+<br><br><br><br>
+<form action="buscarU.php" method="post">
+    <label>Id a buscar</label>
+    <input type="text" name="id_login"><br>
+    <input type="submit" value="Buscar">
+    <br><br><br>
+    <a href="crearU.html" class="eliminar">crear usuario</a>
+    <a href="actaulizar.html" class="eliminar">modificar usuario</a>
+    <a href="eliminarU.html" class="eliminar">eliminar usuario</a>
+
+    <a href="logout.php" class="cerrar">Cerrar sesion</a>
+</form>
+</center>
+</main>
